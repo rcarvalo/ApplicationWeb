@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\client",
+    "\\serveur"
   ],
-  "SelectedNode": "\\C:\\Users\\clepe\\OneDrive\\Documents\\AppliWeb",
+  "SelectedNode": "\\client",
   "PreviewInSolutionExplorer": false
 }
