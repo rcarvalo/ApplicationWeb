@@ -1,0 +1,10 @@
+.feed{
+	flex:5;
+	height: = 500px;
+	
+	border-color: lightgrey;
+}
+
+.feedWrapper{
+	padding: 20px
+}
