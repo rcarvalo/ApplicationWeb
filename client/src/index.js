@@ -1,10 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import Application from "./Application";
+import { ColorModeScript } from "@chakra-ui/color-mode";
+import { ChakraProvider } from "@chakra-ui/react";
+import theme from "./theme";
+import { AuthContextProvider } from "./context/AuthContext1";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+    <ChakraProvider theme={theme}>
+    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+    <AuthContextProvider>
+      <Application />
+    </AuthContextProvider>
+    </ChakraProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
+)
