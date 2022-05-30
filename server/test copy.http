@@ -1,0 +1,12 @@
+
+
+POST http://localhost:8800/api/conversations/
+Content-Type: application/json
+
+{
+
+    "senderId":"628885beda137e234ce166cd" ,
+    "receiverId":"628a29e1488d7a5e29de4b06" 
+       
+}
+
